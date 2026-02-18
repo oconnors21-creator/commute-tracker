@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commute Tracker</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<h1>Commute Tracker</h1>
+
+<div id="status">Status: idle</div>
+<div id="timers"></div>
+
+<h2>Setup</h2>
+<button onclick="setHome()">Set Home</button>
+<button onclick="addWork()">Add Work Location</button>
+<ul id="workList"></ul>
+
+<h2>Manual Override</h2>
+<button onclick="manualStart()">Start Commute</button>
+<button onclick="manualArrive()">Arrived at Work</button>
+<button onclick="manualLeave()">Left Work</button>
+<button onclick="manualHome()">Arrived Home</button>
+
+<h2>History</h2>
+<button onclick="exportCSV()">Export CSV</button>
+<div id="history"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
